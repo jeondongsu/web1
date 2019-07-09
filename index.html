@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-최신 인기 영화 사이트 추천-</title>
     <style>
       h1{
@@ -65,6 +66,7 @@
           grid-template-columns: 1fr 1fr 1fr;
           padding-left: 0px;
           padding-right: 0px;
+          width:100%;
         }
       @media (max-width: 870px){
         #sitebox{
@@ -75,12 +77,22 @@
       }
       @media screen and (max-width: 500px){
         #sitebox{
-          display: block;
+          display: grid;
           grid-template-columns: 1fr;
           padding-left: 0px;
           padding-right: 0px;
-          width: 100%;
       }
+      @media screen and (max-width: 375px){
+        #sitebox{
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-left: 0px;
+          padding-right: 0px;
+          margin: 0;
+          width: "100%";
+          height: auto;
+      }
+    }
     }
   }
 }
@@ -143,7 +155,7 @@
           </p>
           <a href="http://fileis.com/?p_id=seoad&path=main" target="_blank"><button id=button1>파일이즈 바로가기</button></a>
         </div>
-        <div id="box2"><img src="filesun.png" width="350px" title="파일썬"><br>
+        <div id="box2"><img src="filesun.png" width="100%" title="파일썬"><br>
           <p>
           ▶2018년 6월 오픈<br>
           ▶가입시 무료포인트 300P지급!<br>
@@ -151,7 +163,7 @@
           </p>
           <a href="http://event.filesun.com/intro.php?partnerid=seoad&basicmode=1" target="_blank"><button id=button1>파일썬 바로가기</button></a>
         </div>
-        <div id="box3"><img src="filemaru.png" width="350px" title="파일마루"><br>
+        <div id="box3"><img src="filemaru.png" width="100%" title="파일마루"><br>
           <p>
           ▶2018년 11월 오픈<br>
           ▶가입시 무료포인트 300P지급!<br>
@@ -159,7 +171,7 @@
           </p>
           <a href="http://www.filemaru.com/?p_id=seoad" target="_blank"><button id=button1>파일마루 바로가기</button></a>
         </div>
-        <div id="box4"><img src="dodofile.png" width="350px" title="도도파일"><br>
+        <div id="box4"><img src="dodofile.png" width="100%" title="도도파일"><br>
           <p>
           ▶2019년 1월 오픈<br>
           ▶가입시 무료포인트 500P지급!<br>
@@ -167,7 +179,7 @@
           </p>
           <a href="http://www.dodofile.com/?ptn=seoad&cate=1" target="_blank"><button id=button1>도도파일 바로가기</button></a>
         </div>
-        <div id="box5"><img src="filelon.png" width="350px" title="파일론"><br>
+        <div id="box5"><img src="filelon.png" width="100%" title="파일론"><br>
           <p>
           ▶2018년 1월 오픈<br>
           ▶가입시 무료포인트 800P지급!<br>
@@ -175,7 +187,7 @@
           </p>
           <a href="http://www.filelon.com/partner/?p_id=seoad&path=main" target="_blank"><button id=button1>파일론 바로가기</button></a>
         </div>
-        <div id="box6"><img src="bondisk.png" width="350px" title="본디스크"><br>
+        <div id="box6"><img src="bondisk.png" width="100%" title="본디스크"><br>
           <p>
           ▶2010년 8월 오픈<br>
           ▶가입시 무료포인트 500P지급!<br>
