@@ -73,12 +73,13 @@
           padding-left: 0px;
           padding-right: 0px;
       }
-      @media (max-width: 500px){
+      @media screen and (max-width: 500px){
         #sitebox{
-          display: block;
+          display: grid;
           grid-template-columns: 1fr;
           padding-left: 0px;
           padding-right: 0px;
+          width: 100%;
       }
     }
   }
@@ -134,7 +135,7 @@
   <body>
     <h1>p2p 사이트 추천</h1>
       <div id="sitebox">
-        <div id="box1"><img src="fileis.png" width="350px" title="파일이즈"><br>
+        <div id="box1"><img src="fileis.png" width="100%" title="파일이즈"><br>
           <p>
           ▶2017년 12월 오픈<br>
           ▶가입시 무료포인트 300P지급!<br>
