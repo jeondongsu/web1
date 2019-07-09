@@ -1,165 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Explorer, chrome=1">
-    <title>최신, 인기영화 추천</title>
+    <title>-최신 인기 영화 사이트 추천-</title>
     <style>
-      <*#total {background-color:gainsboro;}*>
-      #list{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        }
       h1{
         font-size:45px;
         text-align:center;
-        border-bottom:3px solid gray;
+        border-bottom:3px solid #A9A9A9;
         margin: 0;
         padding: 40px;
-        }
-      ol{
-        border-right:3px solid gray;
-        width:100px;
-        margin:0;
-        padding:55px;
-        }
-      li{
-        margin:5px;
-        }
-      a{
-        color:black;
-        text-decoration:none;
-        }
-        #bon{
-          padding-left: 100px;
+      }
+      #sitebox{
+        padding-left: 200px;
+        padding-right: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #box1{
+        border:2px solid #A9A9A9; padding:10px;
+        border-radius:10px 10px 10px 10px;
+        width:350px;
+        margin: 20px;
+        padding: 10px;
+      }
+      #box2{
+        border:2px solid #A9A9A9; padding:10px;
+        border-radius:10px 10px 10px 10px;
+        width:350px;
+        margin: 20px;
+        padding: 10px;
+      }
+      #box3{
+        border:2px solid #A9A9A9; padding:10px;
+        border-radius:10px 10px 10px 10px;
+        width:350px;
+        margin: 20px;
+        padding: 10px;
+      }
+      #box4{
+        border:2px solid #A9A9A9; padding:10px;
+        border-radius:10px 10px 10px 10px;
+        width:350px;
+        margin: 20px;
+        padding: 10px;
+      }
+      #box5{
+        border:2px solid #A9A9A9; padding:10px;
+        border-radius:10px 10px 10px 10px;
+        width:350px;
+        margin: 20px;
+        padding: 10px;
+      }
+      #box6{
+        border:2px solid #A9A9A9; padding:10px;
+        border-radius:10px 10px 10px 10px;
+        width:350px;
+        margin: 20px;
+        padding: 10px;
+      }
+      @media (max-width: 1250px){
+        #sitebox{
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
+          padding-left: 0px;
+          padding-right: 0px;
         }
-        footer{
-          text-align: center;
-          margin:0px;
-        }
-        footer{
-          border-top:3px solid gray;
-          margin: 0;
-          padding: 10px;
-          }
-        #box1{
-          border:2px solid gray; padding:10px;
-          width:250px;
-          margin: 20px;
-          padding: 30px;
-          folat:left
-        }
-        #box2{
-          border:2px solid gray; padding:10px;
-          width:250px;
-          margin: 20px;
-          padding: 30px;
-          folat:right
-        }
-        #box3{
-          border:2px solid gray; padding:10px;
-          width:250px;
-          margin: 20px;
-          padding: 30px;
-          folat:left
-        }
-        #box4{
-          border:2px solid gray; padding:10px;
-          width:250px;
-          margin: 20px;
-          padding: 30px;
-          folat:left
-        }
-        #box5{
-          border:2px solid gray; padding:10px;
-          width:250px;
-          margin: 20px;
-          padding: 30px;
-          folat:left
-        }
-        #box6{
-          border:2px solid gray; padding:10px;
-          width:250px;
-          margin: 20px;
-          padding: 30px;
-          folat:left
-        }
-        body {
-
-        webkit-font-smoothing: subpixel-antialiased;
-
-        webkit-touch-callout: none;
-
-        webkit-user-select: none;
-
-        khtml-user-select: none;
-
-        ms-user-select: none;
-
-        moz-user-select: none;
-
-        user-select: none;
-        }
-
-    </style>
-    <script type="text/javascript">
-      function click(){
-        if (event.button == 2){
-        alert ("마우스 우클릭을 금지합니다.");
+      @media (max-width: 870px){
+        #sitebox{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-left: 0px;
+          padding-right: 0px;
       }
+      @media (max-width: 500px){
+        #sitebox{
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+      @media (max-width: 376px){
+        #sitebox{
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+    #button1 {
+      width:350px;
+      background-color: #A9A9A9;
+      border: none;
+      color:#fff;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 4px;
+      cursor: pointer;
+      border-radius:10px 10px 10px 10px;
+      }
+    #button1:hover {
+      background-color: #696969;
+      }
+    #box1:hover {
+      border-color: #696969;
+      }
+    #box2:hover {
+      border-color: #696969;
+      }
+    #box3:hover {
+      border-color: #696969;
+      }
+    #box4:hover {
+      border-color: #696969;
+      }
+    #box5:hover {
+      border-color: #696969;
+      }
+    #box6:hover {
+      border-color: #696969;
+      }
+
+    p{
+      font-size:15px;
     }
-    document.onmousedown = click;
-    </script>
+
+      footer{
+        border-top:3px solid #A9A9A9;
+        text-align: center;
+        margin:0px;
+        padding: 10px;
+    </style>
   </head>
   <body>
-    <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' alert('내용을 복사할 수 없습니다.');
-
-
-			return false;>
-
-      <div id=total>
-        <h1><a href="index.html">p2p 추천사이트</a></h1>
-
-        <div id="list">
-          <ol>
-            <a href="index.html">추천사이트</a>
-            <li><a href="fileis.html">파일이즈<img src="logo_1.gif" width="22px"></a></li>
-            <li><a href="filemaru.html">파일마루<img src="logo_2.gif" width="22px"></a></li>
-            <li><a href="filelon.html">파일론<img src="logo_2.gif" width="22px"></a></li>
-            <li><a href="filesun.html">파일썬<img src="logo_2.gif" width="22px"></a></li>
-            <li><a href="dodofile.html">도도파일<img src="logo_2.gif" width="22px"></a></li>
-            <li><a href="yesfile.html">예스파일<img src="logo_2.gif" width="22px"></a></li>
-          </ol>
-          <div id=bon>
-            <div id="box1">
-              <img src="fileis.png" width="250px;">
-              파일이즈
-            </div>
-            <div id="box2">
-              <img src="filemaru.png" width="250px;">
-              파일마루
-            </div>
-            <div id="box3">
-              <img src="filelon.png" width="250px;">
-              파일론
-            </div>
-            <div id="box4">
-              <img src="filesun.png" width="250px;">
-              파일썬
-            </div>
-            <div id="box5">
-              <img src="dodofile.png" width="250px;">
-              도도파일
-            </div>
-            <div id="box6">
-              <img src="yesfile.png" width="250px;">
-              예스파일
-            </div>
-          </div>
+    <h1>p2p 사이트 추천</h1>
+      <div id="sitebox">
+        <div id="box1"><img src="fileis.png" width="350px" title="파일이즈"><br>
+          <p>
+          ▶2017년 12월 오픈<br>
+          ▶가입시 무료포인트 300P지급!<br>
+          ▶모바일 앱 설치시 1,000P 지급!
+          </p>
+          <a href="http://fileis.com/?p_id=seoad&path=main" target="_blank"><button id=button1>파일이즈 바로가기</button></a>
         </div>
-      <footer>최신, 인기영화 추천사이트</footer>
+        <div id="box2"><img src="filesun.png" width="350px" title="파일썬"><br>
+          <p>
+          ▶2018년 6월 오픈<br>
+          ▶가입시 무료포인트 300P지급!<br>
+          ▶모바일 앱 설치시 500P 지급!
+          </p>
+          <a href="http://event.filesun.com/intro.php?partnerid=seoad&basicmode=1" target="_blank"><button id=button1>파일썬 바로가기</button></a>
+        </div>
+        <div id="box3"><img src="filemaru.png" width="350px" title="파일마루"><br>
+          <p>
+          ▶2018년 11월 오픈<br>
+          ▶가입시 무료포인트 300P지급!<br>
+          ▶모바일 앱 설치시 1,000P 지급!
+          </p>
+          <a href="http://www.filemaru.com/?p_id=seoad" target="_blank"><button id=button1>파일마루 바로가기</button></a>
+        </div>
+        <div id="box4"><img src="dodofile.png" width="350px" title="도도파일"><br>
+          <p>
+          ▶2019년 1월 오픈<br>
+          ▶가입시 무료포인트 500P지급!<br>
+          ▶모바일 앱 설치시 500P 지급!
+          </p>
+          <a href="http://www.dodofile.com/?ptn=seoad&cate=1" target="_blank"><button id=button1>도도파일 바로가기</button></a>
+        </div>
+        <div id="box5"><img src="filelon.png" width="350px" title="파일론"><br>
+          <p>
+          ▶2018년 1월 오픈<br>
+          ▶가입시 무료포인트 800P지급!<br>
+          ▶<span class="redicon">
+          </p>
+          <a href="http://www.filelon.com/partner/?p_id=seoad&path=main" target="_blank"><button id=button1>파일론 바로가기</button></a>
+        </div>
+        <div id="box6"><img src="bondisk.png" width="350px" title="본디스크"><br>
+          <p>
+          ▶2010년 8월 오픈<br>
+          ▶가입시 무료포인트 500P지급!<br>
+          ▶
+          </p>
+          <a href="http://www.bondisk.com/?ad=seoad" target="_blank"><button id=button1>본디스크 바로가기</button></a>
+        </div>
       </div>
+
+    <footer>2019년 최신 인기영화 P2P 추천사이트</footer>
   </body>
 </html>
